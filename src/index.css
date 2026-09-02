@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  ::selection {
+    background-color: #FDA228;
+    color: #000000;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #9CA3AF;
+    border-radius: 9999px;
+  }
+  .dark ::-webkit-scrollbar-thumb {
+    background: #374151;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FDA228;
+  }
+}
+
+/* Light Mode Stroke Text - Refined Bolder Weight */
+.stroke-text-black {
+  -webkit-text-stroke: 2.2px #0A0A0A;
+  color: transparent;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stroke-text-thick-black {
+  -webkit-text-stroke: 2.6px #0A0A0A;
+  color: transparent;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Dark Mode Stroke Text */
+.dark .stroke-text-black {
+  -webkit-text-stroke: 2.2px #F3F4F6;
+  color: transparent;
+}
+
+.dark .stroke-text-thick-black {
+  -webkit-text-stroke: 2.6px #F3F4F6;
+  color: transparent;
+}
+
+.stroke-text-white {
+  -webkit-text-stroke: 2.2px #FFFFFF;
+  color: transparent;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stroke-text-white-thick {
+  -webkit-text-stroke: 2.6px #FFFFFF;
+  color: transparent;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stroke-text-amber {
+  -webkit-text-stroke: 2.2px #FDA228;
+  color: transparent;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Custom interactive classes */
+.nav-blur {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Magnetic Cursor */
+@media (pointer: coarse) {
+  .custom-cursor-follower,
+  .custom-cursor-dot {
+    display: none !important;
+  }
+}
