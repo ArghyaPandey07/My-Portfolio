@@ -117,15 +117,14 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, isDark = false }) => {
         >
           {/* Top Line: DEVELOPER (Heavy Condensed Display, Solid Fill) */}
           <div
-            className="w-full relative cursor-pointer"
+            className="w-full relative"
             onMouseEnter={() => setActiveRole('developer')}
-            onClick={() => onNavigate('projects')}
           >
             <motion.h1
               initial={{ opacity: 0, x: '100%' }}
               animate={{ opacity: 1, x: '0%' }}
               transition={{ duration: 1.2, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className={`font-display font-black text-6xl sm:text-8xl md:text-9xl lg:text-[8rem] xl:text-[9.2rem] tracking-tight uppercase leading-[0.92] transition-all duration-300 ${
+              className={`font-display font-black text-[15vw] sm:text-8xl md:text-9xl lg:text-[8rem] xl:text-[9.2rem] tracking-tight uppercase leading-[0.92] transition-all duration-300 ${
                 isDevActive
                   ? 'text-[#0A0A0A] dark:text-white'
                   : 'stroke-text-black'
@@ -137,15 +136,14 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, isDark = false }) => {
 
           {/* Bottom Line: & TECH ENTHUSIAST (Clean Outline across chest line) */}
           <div
-            className="w-full relative cursor-pointer"
+            className="w-full relative"
             onMouseEnter={() => setActiveRole('enthusiast')}
-            onClick={() => onNavigate('focus')}
           >
             <motion.h2
               initial={{ opacity: 0, x: '-100%' }}
               animate={{ opacity: 1, x: '0%' }}
               transition={{ duration: 1.2, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
-              className={`font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[8rem] tracking-tight uppercase leading-[0.92] transition-all duration-300 ${
+              className={`font-display font-black text-[10vw] sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[8rem] tracking-tight uppercase leading-[0.92] transition-all duration-300 ${
                 isEnthusiastActive
                   ? 'text-[#0A0A0A] dark:text-white'
                   : 'stroke-text-black'
@@ -195,7 +193,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, isDark = false }) => {
               initial={{ opacity: 0, x: '100%' }}
               animate={{ opacity: 1, x: '0%' }}
               transition={{ duration: 1.2, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="font-display font-black text-6xl sm:text-8xl md:text-9xl lg:text-[8rem] xl:text-[9.2rem] tracking-tight uppercase leading-[0.92] stroke-text-white"
+              className="font-display font-black text-[15vw] sm:text-8xl md:text-9xl lg:text-[8rem] xl:text-[9.2rem] tracking-tight uppercase leading-[0.92] stroke-text-white"
             >
               Developer
             </motion.h1>
@@ -211,7 +209,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, isDark = false }) => {
               initial={{ opacity: 0, x: '-100%' }}
               animate={{ opacity: 1, x: '0%' }}
               transition={{ duration: 1.2, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
-              className="font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[8rem] tracking-tight uppercase leading-[0.92] stroke-text-white"
+              className="font-display font-black text-[10vw] sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[8rem] tracking-tight uppercase leading-[0.92] stroke-text-white"
             >
               &amp; Tech Enthusiast
             </motion.h2>

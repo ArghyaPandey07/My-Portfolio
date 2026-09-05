@@ -87,7 +87,7 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div className={`relative min-h-screen bg-[#FAFAFA] dark:bg-[#0A0A0A] text-[#0A0A0A] dark:text-[#F3F4F6] font-sans selection:bg-[#FDA228] selection:text-black transition-colors duration-400`}>
+    <div className={`relative min-h-screen overflow-x-hidden bg-[#FAFAFA] dark:bg-[#0A0A0A] text-[#0A0A0A] dark:text-[#F3F4F6] font-sans selection:bg-[#FDA228] selection:text-black transition-colors duration-400`}>
       {/* Top Scroll Progress Indicator */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-[3px] bg-[#FDA228] origin-left z-[9995] pointer-events-none"
